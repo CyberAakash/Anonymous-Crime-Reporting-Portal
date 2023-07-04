@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<html>
+
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>SMART INDIA HACKATHON</title>
+        
+        <link rel="icon" type="image/x-icon" href="secFav.jpg">
+        <link rel="stylesheet" href="sih.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+       <!-- <img src="maxresdefault.jpg" alt="CYBER CRIME" width="100px" height="100">-->
+
+        <h1 
+        style=
+        "font-family: 'Times New Roman', Times, serif; 
+        font-size: 30px; 
+        font-weight:bold;
+        text-align:center;
+        color: rgb(0, 47, 255);"
+        >Anonymous Web Portal</h1>
+        <br><br>
+
+        <div style="text-align: center;"> 
+        <pre><strong>MINISTRY OF HOME AFFAIRS<br>GOVERNMENT OF INDIA</strong></pre>
+        </div>
+
+        <marquee>
+        <div class="separator" style="clear: both; text-align: center;">
+        <br /></div>
+        <br /><span style="color: red;">
+        <b>In case of Cyber Financial Fraud, 
+        For immediate reporting ,Call 1930 (Earlier 155260).(24*7) 
+        For more details, 
+        see Citizen Manual under “Resources Section”</b>
+        </span>
+        </marquee>
+        <div><marquee><br /></marquee></div>
+
+        <!--<div class="w3-content w3-section" style="max-width:500px">
+        <img class="mySlides w3-animate-fading" src="" style="width:100%">
+        <img class="mySlides w3-animate-fading" src="R.gif" style="width:100%">
+        <img class="mySlides w3-animate-fading" src="R.gif" style="width:100%">
+        <img class="mySlides w3-animate-fading" src="R.gif" style="width:100%">
+        </div>-->
+
+        <script>
+                    var myIndex = 0;
+                    carousel();
+                    
+                    function carousel() {
+                    var i;
+                    var x = document.getElementsByClassName("mySlides");
+                    for (i = 0; i < x.length; i++) { x[i].style.display="none" ; } 
+                    myIndex++; 
+                    if (myIndex> x.length) {myIndex = 1}
+                    x[myIndex-1].style.display = "block";
+                    setTimeout(carousel, 5000);
+                    }
+
+        </script>
+
+    </head>
+
+
+    <body>
+
+        <br><br><br>
+
+
+        <div class="section">
+
+            <h1>Hi I am Aakash</h1>
+
+            <div class="video-container">
+                <div class="color-overlay"></div>
+                <video autoplay loop muted>
+                    <source src="1.mp4" type="video/mp4">
+                </video>
+            </div>
+
+        </div>
+
+        <br><br><br><br>
+
+    <div>
+        <div>
+        <ul class="nav__links">
+        <nav class="menu-bar">
+            <a href="#" class="active">Home</a>
+            <a href="#">About US</a>
+            <a href="#">Contact us</a>
+            <a href="#">Services</a>
+            <a href="#">Helpline</a>
+      
+            <div class="menu-bg"></div>
+          </nav>
+        </nav>
+        </div>
+    </div>
+        
+        <br><br><br>
+
+        <section style="text-align:center; color:rgb(20, 0, 0); font-size: 20px;">
+            <h1><b>Introduction</b></h1>
+            <p>Hi Hell Its Me <e>AAKASH</e></p>
+        </section>
+
+        <script>
+
+            const menuItems = document.querySelectorAll("nav.menu-bar a");
+            const menuBg = document.querySelector("nav.menu-bar .menu-bg");
+
+            menuItems.forEach((i) => {
+                i.addEventListener("mouseover", () => {
+                    let element = i.getBoundingClientRect();
+
+                    menuBg.style.left = element.x + "px";
+                    menuBg.style.top = element.y + "px";
+                    menuBg.style.width = element.width + "px";
+                    menuBg.style.height = element.height + "px";
+
+                    i.style.color = "#fff";
+                    menuBg.style.opacity = 1;
+                });
+
+                i.addEventListener("mouseout", () => {
+                    i.style.color = "#000";
+                    menuBg.style.opacity = 0;
+                });
+            });
+
+        </script>
+
+ 
+        <br><br><br>
+        <div class="container">
+
+
+        <form 
+            name="myForm" 
+            action="" 
+            onsubmit="return validateForm()" 
+            method="post" required
+            id="contactForm">
+
+
+            <table 
+                border="0"   
+                cellspacing="20" 
+                align="center" 
+                style="width: 400px; height:100px; padding: 20px;">
+                <tr>
+                    <td>
+                        <div class="inputbox">
+                        <input 
+                            type="text" 
+                            id="aadhar" 
+                            name="aadhar" 
+                            placeholder=" Enter Your Aadhar No"
+                            style="width:400px; padding: 10px;"
+                        ></div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="inputbox">
+                        <input 
+                            type=text 
+                            list=location 
+                            placeholder="-Choose Location-"
+                            style="width:400px; padding: 10px;"
+                        ></div>
+                        <datalist id=location>
+                            <option> Madurai
+                            <option> Kanniya KanniyaKumari
+                            <option> Chennai
+                        </datalist>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="inputbox">
+                        <input 
+                            type=text 
+                            list=category
+                            placeholder="-Choose Category-"
+                            style="width:400px; padding: 10px;"
+                        ></div>
+                        <datalist id=category>
+                            <option>Chain Snatch
+                            <option>Murder
+                            <option>Rape
+                        </datalist>    
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="inputbox">
+                        <p><label  class="pylones-label">YOUR MESSAGE<br />
+                        <span class="wpcf7-form-control-wrap your-message">
+                        <textarea 
+                            id="desc"
+                            name="your-message" 
+                            cols="40" 
+                            rows="5" 
+                            class="wpcf7-form-control wpcf7-textarea pylones-input" 
+                            aria-invalid="false" 
+                            placeholder="YOUR MESSAGE"
+                            style="width:400px;">
+                        </textarea>
+                        </span> </label></p>
+                    
+                        <!--<textarea 
+                        id="desc" 
+                        name="desc" 
+                        col="10"
+                        rows="10"
+                        placeholder="Detailed Description about the Incident"
+                        style="width:400px;">
+                        </textarea></div>-->
+                    </td>
+                </tr>
+
+                 <tr>
+                    <td>
+                        <div class="inputbox">
+                        <input 
+                        type="file" 
+                        id="myFile" 
+                        name="filename"
+                        style="width:400px; padding: 10px; color: rgb(238, 11, 11);"
+                        ></div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input 
+                            type="submit" 
+                            value="Submit"
+                            style="color: white; font-size:2px solid; width:150px; padding: 10px; background-color:rgb(245, 18, 2);"
+                        >
+                    </td>
+                </tr>
+
+               
+
+            </table>
+        </form>
+        </div>
+        <br><br><br><br>
+
+        <!--<video autoplay muted loop id="myVideo">
+            <source src="1.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+        </video>-->
+
+        <div>
+
+        </div>
+
+    </body>
+</html>
